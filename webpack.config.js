@@ -1,5 +1,6 @@
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const webpack = require('webpack');
 
 module.exports = {
     entry: './app/index.jsx',
@@ -26,6 +27,9 @@ module.exports = {
         new ExtractTextPlugin({
             filename: 'style/main.css',
             allChunks: true
-        })
-    ]
+        }),
+    ],
+    devServer: {
+        publicPath: '/dist/'
+    }
 };

@@ -20,6 +20,6 @@
     "webpack-dev-server": "^2.5.0"
   },
   "scripts": {
-    "start": "webpack --progress --watch"
+    "start": "webpack-dev-server --open"
   }
 }
